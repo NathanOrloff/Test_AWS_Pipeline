@@ -8,7 +8,7 @@ phases:
   build:
     commands:
       - echo "Zipping deployment package..."
-      - zip -r9 ./deployment_package.zip binary_search_tree.py queue_array.py
+      - zip -g ./deployment_package.zip binary_search_tree.py queue_array.py
   post_build:
     commands:   
       - echo "Updating lambda Function"
