@@ -6,7 +6,7 @@ phases:
     runtime-versions:
       python: 3.9 
     commands:
-      - pip install unittest -t lib
+      - pip install unittest
   build:
     commands:
       - echo "Zipping deployment package..."
