@@ -1,5 +1,6 @@
-import unittest
+from queue_array import Queue
 from binary_search_tree import *
+import unittest
 
 class TestLab4(unittest.TestCase):
 
@@ -590,5 +591,5 @@ class TestLab4(unittest.TestCase):
 
 
 
-# if __name__ == '__main__': 
-#     unittest.main()
+def lambda_handler(event, context):
+    unittest.main()
