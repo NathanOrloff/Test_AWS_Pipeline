@@ -1,5 +1,30 @@
 from queue_array import Queue
 
+
+def lambda_handler(event, context):
+    bst = BinarySearchTree()
+    
+    bst.insert(50)
+    bst.insert(40)
+    bst.insert(70)
+    bst.insert(30)
+    bst.insert(60)
+    bst.insert(75)
+    bst.insert(15)
+    bst.insert(15, 'min')
+    bst.insert(35)
+    bst.insert(90)
+    bst.insert(90, 'max')
+    bst.insert(32)
+    bst.insert(37)
+    bst.insert(80)
+    bst.insert(78)
+    bst.insert(83)
+    
+    return (bst.search(50.0) == True)
+
+
+
 class TreeNode:
     def __init__(self, key, data, left=None, right=None):
         self.key = key
