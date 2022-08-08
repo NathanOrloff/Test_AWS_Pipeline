@@ -5,14 +5,14 @@ phases:
   install:
     runtime-versions:
       python: 3.9 
-    commands:
-      - pip install unittest
+    # commands:
+    #   - pip install unittest
   build:
     commands:
       - echo "Zipping deployment package..."
-      - cd lib
-      - zip -r9 ../deployment_package.zip .
-      - cd ..
+      # - cd lib
+      # - zip -r9 ../deployment_package.zip .
+      # - cd ..
       - zip -g ./deployment_package.zip binary_search_tree.py queue_array.py lambda_function.py
   post_build:
     commands:   
